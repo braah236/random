@@ -1,0 +1,10 @@
+U:\pit\projectMarc13\projectMarc13\bin\projectMarc13.dll
+U:\pit\projectMarc13\projectMarc13\bin\projectMarc13.pdb
+U:\pit\projectMarc13\projectMarc13\obj\Debug\projectMarc13.dll
+U:\pit\projectMarc13\projectMarc13\obj\Debug\projectMarc13.pdb
+U:\pit\projectMarc13\projectMarc13\obj\Debug\projectMarc13.csprojResolveAssemblyReference.cache
+C:\Users\Zalán\Desktop\tsbecej\Pit\projectMarc13\projectMarc13\bin\projectMarc13.dll
+C:\Users\Zalán\Desktop\tsbecej\Pit\projectMarc13\projectMarc13\bin\projectMarc13.pdb
+C:\Users\Zalán\Desktop\tsbecej\Pit\projectMarc13\projectMarc13\obj\Debug\projectMarc13.csprojResolveAssemblyReference.cache
+C:\Users\Zalán\Desktop\tsbecej\Pit\projectMarc13\projectMarc13\obj\Debug\projectMarc13.dll
+C:\Users\Zalán\Desktop\tsbecej\Pit\projectMarc13\projectMarc13\obj\Debug\projectMarc13.pdb

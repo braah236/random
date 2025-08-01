@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Car Game</title>
+    <link rel="icon" href="imgs/PixelCarIcon.png" type="image/png">
+
+    <style>
+        /* body{
+            height: 100vh;
+            background: linear-gradient(0deg, orange 0%, black 100%);
+            overflow: hidden;
+        } */
+         
+        #game-area {
+            border: 2px solid rgb(189, 88, 5);
+            /* height: 65vh;
+            width: 60vw; */
+            
+        }
+
+        body {
+            margin: 5% 0 0 0;
+            
+            height: 100vh;
+            background: linear-gradient(
+                0deg,
+                rgb(129, 70, 2) 0%,
+                rgb(0, 0, 0)95%
+            );
+            text-align:center;
+            overflow:hidden;
+        }
+
+        h1 {
+            font-family:'Comic Sans MS';
+            text-align: center;
+            flex-grow: 1; 
+        }
+
+        a {
+            font-family:'Comic Sans MS';
+            margin:0;
+            text-decoration: none;
+            color:rgb(189, 88, 5);
+            font-size:22px;
+            position:absolute;
+            top:15px;
+            left:15px;
+        }
+    
+
+    </style>
+</head>
+<body>
+
+    <canvas id="game-area"></canvas>
+
+        <a href="GameLibrary.html">Go Back</a>
+        <h1>Green Blob</h1>
+
+
+    <script type="module" src="RCG.js"></script>
+</body>
+</html>

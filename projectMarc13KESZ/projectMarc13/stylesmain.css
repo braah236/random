@@ -1,0 +1,78 @@
+﻿body {
+    margin: 0;
+    overflow-x:hidden;
+}
+
+nav {
+    position:fixed;
+    top: 0;
+    left:11.2%;
+    width: 100%;
+    height: 12vh;
+    background-color:#86c43c;
+    z-index:999;
+
+}
+
+    nav button {
+        border-style: none;
+        background:none;
+        cursor:pointer;
+        color:wheat;
+        height:100%;
+        font-size:30px;
+        border-left:1px solid wheat;
+        padding:1%;
+    }
+
+    nav button:hover {
+        background-color: wheat;
+        color:#86c43c;
+    }
+
+
+.left-nav {
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 24vh;
+    height: 100vh;
+    background-color:rgb(255, 0, 0);
+}
+
+.right-nav {
+    position:fixed;
+    top: 0;
+    right:0;
+    width: 24vh;
+    height: 100vh;
+    background-color:red;
+    z-index:9999;
+}
+
+main {
+    overflow-y:auto;
+}
+
+.left-nav .container {
+    position:relative;
+    top:12vh;
+    width:100%;
+    height:auto;
+}
+
+.stripe {
+    width: 40vh;
+    background-color:red;
+    height:120vh;
+    position:absolute;
+    z-index:-5;
+    transform:translate(-50%, -50%);
+    top:75%;
+    left:50%;
+}
+
+.containerS2 {
+    position:relative;
+    left:20%;
+}

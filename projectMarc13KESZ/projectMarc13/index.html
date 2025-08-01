@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Főoldal</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow:hidden;
+        }
+        .cinema {
+            background-image: url('./images/index/cinemabck.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 50vw;
+            opacity:1;
+            text-align:center;
+            background-repeat:no-repeat;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .games {
+            background-image: url('./images/index/gamebck.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 50vw;
+            opacity:1;
+            text-align:center;
+            background-repeat:no-repeat;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .container {
+            display:flex;
+        }
+        .popcorn {
+            top:60%;
+            left:38%;
+            height:16%;
+            width:16%;
+            transition: top 0.5s ease-in-out;
+        }
+        .controller {
+            top:60%;
+            height:16%;
+            right:38%;
+            transition: top 0.5s ease-in-out;
+        }
+
+        .popcorn, .controller {
+            position: relative;
+            transition: top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        h1 {
+            position:static;
+            font-size:75px;
+            text-align:center;
+            }
+
+        .titleC {
+            font-family:'Bookman Old Style';
+            text-align:center;
+            color:white;
+            text-shadow: 5px 3px red;
+            }
+        .titleV {
+            font-family:Arial;
+            text-align:center;
+            color:black;
+            text-shadow: 3px 3px rgb(25, 150, 233), 6px 6px red;
+            }
+        a {
+            text-decoration:none;
+            position:relative;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <a href="Movies.html"><div class="cinema">
+            <h1 class="titleC">Movies</h1>
+            <img class="popcorn" src="images/index/popcorn.png" />
+        </div></a>
+
+        
+        <a href="GameLibrary.html"><div class="games">
+            <h1 class="titleV">Video Games</h1>
+            <img class="controller" src="images/index/game-controller.png" />
+        </div></a>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".cinema").mouseover(function () {
+                $(".games").css("opacity", "0.7");
+                $(".controller").css("top", "67%");
+                $(".popcorn").css({
+                    "width": "25%",
+                    "height": "25%",
+                    "top": "50%",
+                    "transform": "rotate(15deg)"
+                });
+            });
+
+            $(".cinema").mouseleave(function () {
+                $(".games").css("opacity", "1");
+                $(".controller").css("top", "60%");
+                $(".popcorn").css({
+                    "width": "16%",
+                    "height": "16%",
+                    "top": "60%",
+                    "transform": "rotate(0deg)"
+                });
+            });
+
+            $(".games").mouseover(function () {
+                $(".cinema").css("opacity", "0.7");
+                $(".popcorn").css("top", "67%");
+                $(".controller").css({
+                    "width": "25%",
+                    "height": "25%",
+                    "top": "50%",
+                    "transform": "rotate(-15deg)"
+                });
+            });
+
+            $(".games").mouseleave(function () {
+                $(".cinema").css("opacity", "1");
+                $(".popcorn").css("top", "60%");
+                $(".controller").css({
+                    "width": "16%",
+                    "height": "16%",
+                    "top": "60%",
+                    "transform": "rotate(0deg)"
+                });
+            });
+        });
+    </script>
+</body>
+</html>

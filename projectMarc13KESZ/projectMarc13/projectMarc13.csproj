@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24BA71E2-1FEF-4507-9F65-D4583C341B2D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>projectMarc13</RootNamespace>
+    <AssemblyName>projectMarc13</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bullet.js" />
+    <Content Include="BulletController.js" />
+    <Content Include="Enemy.js" />
+    <Content Include="GameLibrary.html" />
+    <Content Include="GreenBlob.html" />
+    <Content Include="GreenBlob.js" />
+    <Content Include="EnemyController.js" />
+    <Content Include="images\GameLibrary\Blobcard.png" />
+    <Content Include="images\GameLibrary\RCGcard.png" />
+    <Content Include="images\GameLibrary\SIcard.png" />
+    <Content Include="images\index\cinemabck.jpg" />
+    <Content Include="images\index\game-controller.png" />
+    <Content Include="images\index\gamebck.jpg" />
+    <Content Include="images\index\popcorn.png" />
+    <Content Include="images\movies\harrypotter.png" />
+    <Content Include="images\movies\ironman.jfif" />
+    <Content Include="images\movies\joker.png" />
+    <Content Include="images\movies\lotr.png" />
+    <Content Include="images\movies\mc.png" />
+    <Content Include="images\movies\pussinboots.png" />
+    <Content Include="images\movies\shrek.png" />
+    <Content Include="images\movies\star wars.png" />
+    <Content Include="images\movies\winnie.png" />
+    <Content Include="images\RCG\PixelCar.png" />
+    <Content Include="images\RCG\PixelCar1.png" />
+    <Content Include="images\RCG\PixelCar2.png" />
+    <Content Include="images\RCG\PixelCarIcon.png" />
+    <Content Include="images\RCG\PixelCarLeft.png" />
+    <Content Include="images\RCG\PixelCarLeft1.png" />
+    <Content Include="images\RCG\PixelCarLeft2.png" />
+    <Content Include="images\RCG\PixelCarRight.png" />
+    <Content Include="images\RCG\PixelCarRight1.png" />
+    <Content Include="images\RCG\PixelCarRight2.png" />
+    <Content Include="images\RCG\TestRoad.png" />
+    <Content Include="images\RCG\Truck1Left.png" />
+    <Content Include="images\RCG\Truck1Right.png" />
+    <Content Include="images\SpaceInvaders\enemy1.png" />
+    <Content Include="images\SpaceInvaders\enemy2.png" />
+    <Content Include="images\SpaceInvaders\enemy3.png" />
+    <Content Include="images\SpaceInvaders\player.png" />
+    <Content Include="images\SpaceInvaders\space.png" />
+    <Content Include="images\movies\spiderman.jfif" />
+    <Content Include="index.html" />
+    <Content Include="Movies.html" />
+    <Content Include="MovingDirection.js" />
+    <Content Include="Player.js" />
+    <Content Include="RCG.html" />
+    <Content Include="RCG.js" />
+    <Content Include="scriptGallery.js" />
+    <Content Include="scriptSlider.js" />
+    <Content Include="sounds\enemy-death.wav" />
+    <Content Include="sounds\shoot.wav" />
+    <Content Include="SpaceInvaders.html" />
+    <Content Include="SpaceInvaders.js" />
+    <Content Include="styleGallery.css" />
+    <Content Include="styleSlider.css" />
+    <Content Include="stylesmain.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50722/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
